@@ -34,21 +34,3 @@
     </a-scene>
 </body>
 </html>
-
-using UnityEngine;
-
-public class VRTextureOptimization : MonoBehaviour
-{
-    void Start()
-    {
-        // Ajustar las texturas para mejorar el rendimiento
-        // Usar texturas comprimidas y de menor resolución en VR
-        Texture2D texture = Resources.Load<Texture2D>("YourTexture");
-
-        // Cambiar la resolución de la textura si es demasiado alta
-        texture.Resize(512, 512); // Reducir el tamaño de la textura
-
-        // Asignar la textura optimizada al material
-        GetComponent<Renderer>().material.mainTexture = texture;
-    }
-}
