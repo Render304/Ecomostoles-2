@@ -35,27 +35,18 @@
 </body>
 </html>
 
-name: Run Tests
+# Nombre del Proyecto
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+Una breve descripción de lo que hace tu proyecto y por qué es útil.
 
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v2
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - name: Install dependencies
-        run: npm install
-      - name: Run tests
-        run: npm test
+## Características
+- Lista de características clave del proyecto.
+
+## Instalación
+Instrucciones claras sobre cómo instalar y ejecutar el proyecto.
+
+```bash
+git clone https://github.com/tu-usuario/tu-proyecto.git
+cd tu-proyecto
+npm install
+npm start
