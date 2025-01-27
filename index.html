@@ -12,10 +12,12 @@
         <!-- Carga de modelos -->
         <a-assets>
             <a-asset-item id="museo-glb" src="museo.glb"></a-asset-item>
+            <a-asset-item id="skibidi.glb.blend" src="skibidi-glb-blend"></a-asset-item>
         </a-assets>
 
         <!-- Modelo 3D del museo y objetos internos -->
         <a-entity gltf-model="#museo-glb" scale="500 500 500">
+            <a-entity gltf-model="#skibidi-glb-blend" scale="200 200 200>
             <!-- Luz ambiental con intensidad baja para evitar sobreiluminar las paredes -->
             <a-light type="ambient" color="#FFFFFF" intensity="0,50"></a-light>
             
